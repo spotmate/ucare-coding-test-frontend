@@ -14,3 +14,12 @@
 
 * Jest (TypeScript対応)
 * Tesint Library (DOM/React)
+
+## Docker(docker-compose)で実行する場合
+
+```sh
+# ライブラリのインストール (ボリュームマウントされるので、node_modulesが作成されます)
+$ docker-compose run local npm install
+# 単体テスト実施
+$ docker-compose run local npm test 
+```
